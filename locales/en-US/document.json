@@ -1,0 +1,29 @@
+{
+  "DocumentList": "Document List",
+  "actions": "Actions",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "confirmDelete": "Are you sure you want to delete?",
+  "create": "Create",
+  "createDocument": "Create Document",
+  "createSuccess": "Create Success",
+  "delete": "Delete",
+  "deleteDescription": "Once deleted, the data cannot be recovered. Please proceed with caution.",
+  "deleteSuccess": "Delete Success",
+  "edit": "Edit",
+  "editDocument": "Edit Document",
+  "form": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "content": "Content",
+    "tags": "Tags",
+    "tagsPlaceholder": "Use Enter or comma (,) to enter multiple tags",
+    "title": "Title",
+    "titlePlaceholder": "Please enter"
+  },
+  "show": "Show",
+  "tags": "Tags",
+  "title": "Title",
+  "updateSuccess": "Update Success",
+  "updatedAt": "Updated At"
+}

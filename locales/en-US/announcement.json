@@ -1,0 +1,30 @@
+{
+  "actions": "Actions",
+  "announcementList": "Announcement List",
+  "cancel": "Cancel",
+  "confirm": "Confirm",
+  "confirmDelete": "Are you sure you want to delete?",
+  "content": "Content",
+  "create": "Create",
+  "createAnnouncement": "Create Announcement",
+  "createSuccess": "Create Success",
+  "delete": "Delete",
+  "deleteDescription": "Once deleted, the data cannot be recovered. Please proceed with caution.",
+  "deleteSuccess": "Delete Success",
+  "edit": "Edit",
+  "editAnnouncement": "Edit Announcement",
+  "enable": "Enable",
+  "form": {
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "content": "Content",
+    "contentPlaceholder": "Please enter announcement content (supports Markdown)",
+    "title": "Title",
+    "titlePlaceholder": "Please enter"
+  },
+  "hide": "Hide",
+  "show": "Show",
+  "title": "Title",
+  "updateSuccess": "Update Success",
+  "updatedAt": "Updated At"
+}

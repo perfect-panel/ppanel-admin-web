@@ -1,0 +1,41 @@
+{
+  "aliPay": "Alipay payment",
+  "alipayf2f": {
+    "appId": "Alipay App ID",
+    "invoiceName": "Custom Product Name",
+    "invoiceNameDescription": "Will be displayed on Alipay bill",
+    "privateKey": "Alipay Private Key",
+    "publicKey": "Alipay Public Key"
+  },
+  "enable": "Enable",
+  "enableDescription": "Enable this payment method",
+  "epay": {
+    "key": "KEY",
+    "pid": "PID",
+    "url": "URL"
+  },
+  "feeMode": "Fee Mode",
+  "feeModeDescription": "Fee charging method for additional fees",
+  "feeModeItems": ["No Fee", "Percentage", "Fixed Amount", "Both"],
+  "feePercent": "Percentage Fee (optional)",
+  "feePercentDescription": "Add fee on top of order amount",
+  "fixedFee": "Fixed Fee (optional)",
+  "fixedFeeDescription": "Add fixed fee on top of order amount",
+  "iconUrl": "Icon URL (optional)",
+  "iconUrlDescription": "Used for frontend display",
+  "inputPlaceholder": "Please enter",
+  "key": "KEY",
+  "notifyUrl": "Custom Notification Domain (optional)",
+  "notifyUrlDescription": "Gateway notifications will be sent to this domain",
+  "pid": "PID",
+  "saveSuccess": "Save Successful",
+  "showName": "Display Name",
+  "showNameDescription": "Used for frontend display",
+  "stripe": {
+    "publicKey": "PUBLIC KEY",
+    "secretKey": "SECRET KEY",
+    "webhookSecret": "WEBHOOK Secret Key"
+  },
+  "url": "URL",
+  "wechatPay": "WeChat Pay"
+}

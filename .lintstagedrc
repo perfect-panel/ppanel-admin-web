@@ -1,0 +1,7 @@
+{
+  "*.json": ["prettier --write --no-error-on-unmatched-pattern"],
+  "*.md": ["remark --quiet --output --", "prettier --write --no-error-on-unmatched-pattern"],
+  "*.{css,less}": ["stylelint --fix", "prettier --write"],
+  "*.{js,jsx}": ["prettier --write", "stylelint --fix", "eslint --fix"],
+  "*.{ts,tsx}": ["prettier --parser=typescript --write", "stylelint --fix", "eslint --fix"]
+}

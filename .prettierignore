@@ -1,0 +1,66 @@
+# Prettierignore for LobeHub
+################################################################
+
+# general
+.DS_Store
+.editorconfig
+.idea
+.vscode
+.history
+.temp
+.env.development
+.env.local
+.husky
+.npmrc
+venv
+temp
+tmp
+LICENSE
+
+# dependencies
+node_modules
+*.log
+*.lock
+package-lock.json
+
+# ci
+.coverage
+.eslintcache
+.stylelintcache
+test-output
+
+# production
+dist
+es
+lib
+logs
+
+# umi
+.umi
+.umi-production
+.umi-test
+.dumi/tmp*
+
+# ignore files
+.*ignore
+
+# docker
+docker
+Dockerfile*
+
+# image
+*.webp
+*.gif
+*.png
+*.jpg
+*.ico
+*.svg
+
+# shadcn
+components/ui
+
+# lotties
+components/lotties
+
+# misc
+# add other ignore file below

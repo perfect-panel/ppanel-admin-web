@@ -1,0 +1,29 @@
+{
+  "amount": "Amount",
+  "failed": "Failed",
+  "feAmount": "Fee Amount",
+  "method": "Payment Method",
+  "methods": {
+    "alipay_f2f": "Alipay (Face to Face)",
+    "balance": "Balance",
+    "epay": "Epay",
+    "stripe_alipay": "Stripe (Alipay)",
+    "stripe_wechat_pay": "Stripe (WeChat)"
+  },
+  "orderNumber": "Order Number",
+  "reductionPrice": "Discount Amount",
+  "status": "Order Status",
+  "subscribe": "Subscribe",
+  "subscribePrice": "Subscription Price",
+  "total": "Total",
+  "tradeNo": "Transaction Number",
+  "type": {
+    "0": "Type",
+    "1": "New Purchase",
+    "2": "Renewal",
+    "3": "Reset Traffic",
+    "4": "Recharge"
+  },
+  "updateTime": "Update Time",
+  "user": "User"
+}

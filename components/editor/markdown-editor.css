@@ -1,0 +1,59 @@
+.rc-md-editor {
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+}
+.rc-md-editor .editor-container > .section {
+  border-right: 1px solid hsl(var(--border));
+}
+.rc-md-editor .editor-container .sec-md .input {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+.custom-html-style a {
+  color: hsl(var(--primary));
+}
+.custom-html-style a:hover {
+  color: hsl(var(--primary-foreground));
+}
+.custom-html-style hr {
+  border-top: 1px solid hsl(var(--muted));
+}
+.custom-html-style code,
+.custom-html-style pre {
+  background-color: hsl(var(--muted));
+}
+.custom-html-style blockquote {
+  background: rgba(102, 128, 153, 0.05);
+  color: hsl(var(--foreground));
+  border-left: 10px solid hsl(var(--muted));
+}
+.custom-html-style table {
+  border: 1px solid hsl(var(--muted));
+}
+.custom-html-style table tr {
+  border: 1px solid hsl(var(--muted));
+}
+.custom-html-style table th {
+  background-color: hsl(var(--muted));
+  border: 1px solid hsl(var(--muted));
+}
+.custom-html-style table td {
+  border: 1px solid hsl(var(--muted));
+}
+.rc-md-editor .drop-wrap {
+  background-color: hsl(var(--background));
+  border-color: hsl(var(--muted));
+}
+.rc-md-editor .rc-md-navigation {
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--muted));
+}
+.rc-md-editor .rc-md-navigation .button-wrap .button:hover {
+  color: hsl(var(--foreground));
+}
+.rc-md-editor .rc-md-divider {
+  background-color: hsl(var(--border));
+}
+.rc-md-editor .header-list .list-item:hover {
+  background: hsl(var(--primary));
+}

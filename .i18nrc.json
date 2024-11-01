@@ -1,0 +1,15 @@
+{
+  "entry": "./locales/zh-CN",
+  "entryLocale": "zh-CN",
+  "experimental": {
+    "jsonMode": true
+  },
+  "markdown": {
+    "entry": ["./README.md"],
+    "entryLocale": "en-US",
+    "outputLocales": ["zh-CN"]
+  },
+  "modelName": "gpt-3.5-turbo",
+  "output": "./locales",
+  "outputLocales": ["en-US", "zh-CN"]
+}
