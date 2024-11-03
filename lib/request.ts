@@ -2,9 +2,10 @@ import { getAuthorization, isBrowser, Logout } from '@/lib';
 import { getTranslations } from '@/locales/utils';
 import axios, { InternalAxiosRequestConfig } from 'axios';
 import { toast } from 'sonner';
+import { NEXT_PUBLIC_API_URL, NEXT_PUBLIC_SITE_URL } from './env';
 
 const request = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL || process.env.NEXT_PUBLIC_SITE_URL,
+  baseURL: NEXT_PUBLIC_API_URL || NEXT_PUBLIC_SITE_URL,
   // withCredentials: true,
   // withXSRFToken: true,
   timeout: 10000,

@@ -8,6 +8,7 @@ import '@/styles/globals.css';
 
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
+import { PublicEnvScript } from 'next-runtime-env';
 import { cookies } from 'next/headers';
 import { Metadata } from 'next/types';
 import NextTopLoader from 'nextjs-toploader';
@@ -60,6 +61,9 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html suppressHydrationWarning lang={locale}>
+      <head>
+        <PublicEnvScript />
+      </head>
       <body
         className={cn(
           'h-[calc(100dvh-env(safe-area-inset-top))] overflow-hidden bg-background font-sans antialiased',

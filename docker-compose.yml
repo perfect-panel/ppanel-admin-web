@@ -4,17 +4,17 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-      args:
-        NEXT_PUBLIC_DEFAULT_LANGUAGE:
+    environment:
+      NEXT_PUBLIC_DEFAULT_LANGUAGE:
 
-        NEXT_PUBLIC_SITE_URL: https://admin.ppanel.dev
-        NEXT_PUBLIC_API_URL: https://api.ppanel.dev
+      NEXT_PUBLIC_SITE_URL: https://admin.ppanel.dev
+      NEXT_PUBLIC_API_URL: 'https://api.ppanel.dev'
 
-        NEXT_PUBLIC_EMAIL: support@ppanel.dev
-        NEXT_PUBLIC_TELEGRAM_LINK: https://t.me/VPNboardChat
+      NEXT_PUBLIC_EMAIL: support@ppanel.dev
+      NEXT_PUBLIC_TELEGRAM_LINK: https://t.me/VPNboardChat
 
-        NEXT_PUBLIC_DEFAULT_USER_EMAIL: support@ppanel.dev
-        NEXT_PUBLIC_DEFAULT_USER_PASSWORD: support@ppanel.dev
+      NEXT_PUBLIC_DEFAULT_USER_EMAIL: support@ppanel.dev
+      NEXT_PUBLIC_DEFAULT_USER_PASSWORD: support@ppanel.dev
     restart: always
     ports:
       - 3000:3000

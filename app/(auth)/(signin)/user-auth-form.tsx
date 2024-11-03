@@ -17,6 +17,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { getRedirectUrl, setAuthorization } from '@/lib';
+import { NEXT_PUBLIC_DEFAULT_USER_EMAIL, NEXT_PUBLIC_DEFAULT_USER_PASSWORD } from '@/lib/env';
 import { userLogin } from '@/services/common/auth';
 
 const formSchema = z.object({
@@ -28,8 +29,8 @@ export default function UserAuthForm() {
   const router = useRouter();
   const [loading, startTransition] = useTransition();
   const defaultValues = {
-    email: process.env.NEXT_PUBLIC_DEFAULT_USER_EMAIL,
-    password: process.env.NEXT_PUBLIC_DEFAULT_USER_PASSWORD,
+    email: NEXT_PUBLIC_DEFAULT_USER_EMAIL,
+    password: NEXT_PUBLIC_DEFAULT_USER_PASSWORD,
   };
   const form = useForm<API.UserLoginRequest>({
     defaultValues,

@@ -2,7 +2,7 @@ import CryptoJS from 'crypto-js';
 import { intlFormat } from 'date-fns';
 import { evaluate } from 'mathjs';
 import Cookies from 'universal-cookie';
-
+import { NEXT_PUBLIC_API_URL, NEXT_PUBLIC_DEFAULT_LANGUAGE } from './env';
 
 export const isBrowser = () => typeof window !== 'undefined';
 
@@ -18,7 +18,7 @@ export function getLocale() {
   const defaultLocale = locales.includes(browserLocale) ? browserLocale : '';
   const cookies = new Cookies(null, { path: '/' });
   const cookieLocale = cookies.get('locale') || '';
-  const locale = cookieLocale || defaultLocale || process.env.NEXT_PUBLIC_DEFAULT_LANGUAGE || locales[0];
+  const locale = cookieLocale || defaultLocale || NEXT_PUBLIC_DEFAULT_LANGUAGE || locales[0];
   return locale
 }
 
@@ -27,14 +27,14 @@ export function setLocale(value: string) {
 }
 
 export function setAuthorization(value: string) {
-  const Authorization = CryptoJS.AES.encrypt(value, process.env.NEXT_PUBLIC_API_URL!).toString();
+  const Authorization = CryptoJS.AES.encrypt(value, NEXT_PUBLIC_API_URL || '').toString();
   return cookies.set('Authorization', Authorization);
 }
 
 export function getAuthorization(value?: string) {
   const Authorization = isBrowser() ? cookies.get('Authorization') : value;
   if(!Authorization) return;
-  const bytes = CryptoJS.AES.decrypt(Authorization, process.env.NEXT_PUBLIC_API_URL!);
+  const bytes = CryptoJS.AES.decrypt(Authorization, NEXT_PUBLIC_API_URL || '');
   return bytes.toString(CryptoJS.enc.Utf8);
 }
 
